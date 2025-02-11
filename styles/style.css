@@ -16,6 +16,7 @@ d3c1d2- thistle - lavender gray - hsl(303, 17%, 79%);
     --main-bg-dark: hsl(200, 10%, 5%);
     --bg-medium: hsl(200, 10%, 50%);
     --bg-medium-accent: hsl(200, 20%, 50%);
+    --bg-medium-accent-h: hsl(200, 10%, 40%);
     --accent-bg-dark: hsl(190, 10%, 10%);
     --focus-bg-dark: hsl(200, 10%, 8%);
     --fonts-dark: hsl(200, 10%, 5%);
@@ -118,6 +119,7 @@ a:active{
     background-color: var(--bg-medium);
     border-radius: 10px;
     width: 30%;
+    padding: 5px 0px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s;
@@ -125,10 +127,11 @@ a:active{
 
 .project-card:hover {
     transform: scale(1.10);
-    background-color: var(--bg-medium-accent);
+    background-color: var(--bg-medium-accent-h);
 }
 
 .project-image {
+    padding: 2px;
     width: 100%;
     /* height: 200px; */
     object-fit: cover;
