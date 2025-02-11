@@ -1,0 +1,222 @@
+/* COLOR PALETTE
+https://coolors.co/092327-0b5351-939196-d3c1d2-2a0800
+092327 - GUNMETAL - ? - this is dark teal
+0b5351 - DARK SLATE GRAY? - it's teal
+939196 - taupe gray
+d3c1d2- thistle - lavender gray - hsl(303, 17%, 79%);
+2a0800 - black bean - dark purple-brown */
+/* added light teal/aqua for fonts on dark background
+#9bb6b5 */
+
+/* define color variables */
+/* 303 is old hue */
+:root {
+    --accent-bg-light: hsl(200, 10%, 79%);
+    --main-bg-light: hsl(200, 10%, 70%);
+    --main-bg-dark: hsl(200, 10%, 5%);
+    --bg-medium: hsl(200, 10%, 50%);
+    --bg-medium-accent: hsl(200, 20%, 50%);
+    --accent-bg-dark: hsl(190, 10%, 10%);
+    --focus-bg-dark: hsl(200, 10%, 8%);
+    --fonts-dark: hsl(200, 10%, 5%);
+    --fonts-dark-accent: hsl(200, 20%, 15%);
+    --fonts-dark-highlight: hsl(188, 63%, 9%);
+    --fonts-light: hsl(200, 10%, 70%);
+    --fonts-light-highlight: hsl(200, 20%, 80%);
+}
+
+.varela-round-regular {
+    font-family: "Varela Round", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-bold {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body {
+    background-color: var(--main-bg-light);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+    background-color: var(--accent-bg-light);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+main {
+    transition: background-color 0.5s, color 0.5s;
+}
+
+footer {
+    background-color: var(--accent-bg-light);
+    transition: background-color 0.5s, color 0.5s;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+#mode {
+    margin-left: auto;
+}
+
+a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+a:link {
+    color: var(--fonts-dark);
+}
+
+a:visited {
+    color: var(--fonts-dark-accent);
+}
+
+a:hover{
+    color: var(--fonts-dark-highlight);
+    font-size: larger;
+}
+
+a:active{
+    color: var(--fonts-dark-highlight);
+}
+
+.jobs {
+    display: flex;
+
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+.project-card {
+    background-color: var(--bg-medium);
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.10);
+    background-color: var(--bg-medium-accent);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-details {
+    padding: 20px;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.project p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+footer h3 {
+    margin: 0;
+}
+footer div {
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+}
+
+
+/* dark mode styles */
+
+nav.dark-mode {
+    background-color: var(--focus-bg-dark);
+}
+
+body.dark-mode {
+    background-color:var(--main-bg-dark);
+    color: var(--main-bg-light);
+}
+
+header.dark-mode {
+    background-color: var(--accent-bg-dark);
+}
+
+main.dark-mode {
+    background-color: var(--accent-bg-dark);
+}
+
+footer.dark-mode {
+    background-color: var(--focus-bg-dark);
+}
+
+.dark-mode a:link {
+    color: var(--fonts-light);
+}
+
+.dark-mode a:visited {
+    color: var(--fonts-light);
+}
+
+.dark-mode a:hover{
+    color: var(--fonts-light-highlight);
+    font-size: larger;
+}
+
+.dark-mode a:active{
+    color: var(--fonts-light-highlight);
+}
+
+/* not used yet */
+.raleway-normal {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.raleway-italic {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.lobster-regular {
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+.montserrat-regular {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: italic;
+  }
