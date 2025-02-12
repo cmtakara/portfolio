@@ -14,5 +14,10 @@ toggleMode.addEventListener('click', (evt) => {
 
     // toggleMode.classList.toggle('dark-mode');
     console.log(body.classList)
-    toggleMode.textContent = body.classList.contains('dark-mode') ? ' Switch to Light Mode ' : ' Switch to Dark Mode ';
+    toggleMode.innerHTML = body.classList.contains('dark-mode') ? '<i class="fa-solid fa-circle-half-stroke"></i> Light Mode ' : '<i class="fa-solid fa-circle-half-stroke"></i> Dark Mode ';
 })
+
+function toggleMenu () {
+    let navEl = document.getElementById("nav");
+    navEl.classList.toggle('responsive');
+}

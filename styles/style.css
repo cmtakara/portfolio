@@ -45,6 +45,10 @@ nav {
     transition: background-color 0.5s, color 0.5s;
 }
 
+nav .icon {
+    display: none;
+}
+
 body {
     background-color: var(--main-bg-light);
     transition: background-color 0.5s, color 0.5s;
@@ -229,3 +233,51 @@ footer.dark-mode {
     font-weight: 200;
     font-style: italic;
   }
+
+  @media screen and (max-width: 768px) {
+    .jobs {
+        flex-direction: column;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 90%;
+        margin: auto;
+    }
+    
+  }
+
+  @media screen and (max-width: 600px) {
+    /* body {background-color: blue;} */
+    nav a:not(:first-child) {display: none;}
+    nav a.icon {
+        /* float: right; */
+        display: block;
+    }
+    #mode {display:inline};
+}
+
+@media screen and (max-width: 600px) {
+    #nav.responsive {
+        flex-direction: column;
+    }
+    nav.responsive #mode {
+        position: absolute;
+        top: 0;
+        right: 25px;
+    }
+    .responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    nav.responsive a {
+        float: none;
+        display: flex;
+        text-align: left;
+    }
+}
