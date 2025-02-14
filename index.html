@@ -9,8 +9,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@1,200&family=Raleway:wght@200;500;900&family=Varela+Round&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="./styles/style.css">
-        <script src="https://kit.fontawesome.com/11a218dda1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/11a218dda1.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
     <title>Christina Takara</title>
 </head>
 
@@ -56,11 +58,16 @@
                 <img src="images/calendar_home.jpg" alt="Full Stack Calendar" class="project-image">
                 <div class="project-details">
                     <h3>Project 1: Calendar Website</h3>
-                    <p>A bullet journal inspired website that combines calendar, planning, and thought dumping functionality.</p>
-                    <a href="https://ctakara-demo-calendar.netlify.app/" target="_blank" class="project-link">View Project</a><br/>
-                    <a href="https://github.com/cmtakara/calendar-frontend" target="_blank" class="project-link">Go to GitHub Repository for frontend</a><br/>
-                    <a href="https://calendar-backend-76zw.onrender.com/" target="_blank" class="project-link">Deployed Backend</a><br/>
-                    <a href="https://github.com/cmtakara/calendar-backend" target="_blank" class="project-link">Go to GitHub Repository for backend</a><br/>
+                    <p>A bullet journal inspired website that combines calendar, planning, and thought dumping
+                        functionality.</p>
+                    <a href="https://ctakara-demo-calendar.netlify.app/" target="_blank" class="project-link">View
+                        Project</a><br />
+                    <a href="https://github.com/cmtakara/calendar-frontend" target="_blank" class="project-link">Go to
+                        GitHub Repository for frontend</a><br />
+                    <a href="https://calendar-backend-76zw.onrender.com/" target="_blank" class="project-link">Deployed
+                        Backend</a><br />
+                    <a href="https://github.com/cmtakara/calendar-backend" target="_blank" class="project-link">Go to
+                        GitHub Repository for backend</a><br />
                 </div>
             </div>
 
@@ -69,10 +76,14 @@
                 <div class="project-details">
                     <h3>Project 2: Lesson Planning Website</h3>
                     <p>A website for keeping track of lessons and needed materials inspired by my GED teaching.</p>
-                    <a href="https://ctakara-lesson-plans.netlify.app/" target="_blank" class="project-link">View Project</a><br/>
-                    <a href="https://github.com/cmtakara/sba320" target="_blank" class="project-link">Go to GitHub Repository for frontend</a><br/>
-                    <a href="https://sba318sample.onrender.com/" target="_blank" class="project-link">Deployed Backend</a><br/>
-                    <a href="https://github.com/cmtakara/sba1319" target="_blank" class="project-link">Go to GitHub Repository for backend</a><br/>
+                    <a href="https://ctakara-lesson-plans.netlify.app/" target="_blank" class="project-link">View
+                        Project</a><br />
+                    <a href="https://github.com/cmtakara/sba320" target="_blank" class="project-link">Go to GitHub
+                        Repository for frontend</a><br />
+                    <a href="https://sba318sample.onrender.com/" target="_blank" class="project-link">Deployed
+                        Backend</a><br />
+                    <a href="https://github.com/cmtakara/sba1319" target="_blank" class="project-link">Go to GitHub
+                        Repository for backend</a><br />
                 </div>
             </div>
 
@@ -80,18 +91,35 @@
                 <img src="images/project3.jpg" alt="Garden Planning App" class="project-image">
                 <div class="project-details">
                     <h3>Project 3: Garden Planning App</h3>
-                    <p>A garden planning app built with JavaScript...   Coming Soon</p>
+                    <p>A garden planning app built with JavaScript... Coming Soon</p>
                     <a href="#" class="project-link">View Project</a>
                 </div>
             </div>
     </main>
+    <aside class='hide' id="contact">
+        <p>Send me a message with the email address that you want me to respond to.</p>
+        <form id="contact-form">
+            <input type="hidden" name="contact_number" value="" />
+            <label>Name</label>
+            <input type="text" name="user_name" /> <br />
+            <label>Email</label>
+            <input type="email" name="user_email" /> <br />
+            <label>Message</label>
+            <textarea name="message"></textarea>
+            <input type="submit" value="send" />
+        </form>
+        <button onClick="cancelEmail()">Cancel</button>
+    </aside>
     <footer>
         <h3>Let's Keep In Touch! </h3>
         <div>
-        <div><a href="https://www.emailjs.com/docs/tutorial/creating-contact-form/"><i class="fa-regular fa-envelope"></i> add contact form</a></div>
-        <div><a href="https://github.com/cmtakara" target="_blank"><i class="fa-brands fa-github-alt"></i> GitHub</a></div>
-        <div><a href="https://www.linkedin.com/in/christinatakaratx" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></div>
-    </div>
+            <div><a href="javascript:void(0);" class="icon" onclick="showContact()"><i
+                        class="fa-regular fa-envelope"></i> Contact Me</a></div>
+            <div><a href="https://github.com/cmtakara" target="_blank"><i class="fa-brands fa-github-alt"></i>
+                    GitHub</a></div>
+            <div><a href="https://www.linkedin.com/in/christinatakaratx" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i> LinkedIn</a></div>
+        </div>
     </footer>
 
     <script src="./scripts/script.js"></script>

@@ -205,6 +205,9 @@ footer.dark-mode {
     color: var(--fonts-light-highlight);
 }
 
+.hide {
+    display: none;
+}
 /* not used yet */
 .raleway-normal {
     font-family: "Raleway", serif;
