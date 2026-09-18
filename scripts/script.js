@@ -37,7 +37,7 @@ function showContact() {
 (function () {
     // https://dashboard.emailjs.com/admin/account
     emailjs.init({
-        publicKey: "KZf90ecqBPS-S28XJ",
+        publicKey: "LlBcYsLfCgaM15bqg",
     });
 })();
 
@@ -51,7 +51,7 @@ window.onload = function () {
                 alert('email sent successfully');
                 cancelEmail();
             }, (error) => {
-                // console.log('FAILED...', error);
+                console.log('FAILED...', error);
                 alert('Sorry, the message failed to send.')
                 cancelEmail();
             });
